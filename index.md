@@ -98,6 +98,23 @@ docker image tag scr:v1.0 dockercontaineregistry.azurecr.io/scr:1.0
 ```
 
 7. And push the image to ACR
+![Preview](/imgs/acr_logs.png)
+
+![Preview](/imgs/acr_portal.png)
+
+![Preview](/imgs/containerregistry.png)
+
+5. Login into Azure Registry
+```
+az acr login --name dockercontaineregistry
+```
+
+6. Next, tag the already built image scr:v1.0 to dockercontaineregistry.azurecr.io/scr:1.0 as this is how azure recognizes the naming convention of images to be stored into ACR
+```
+docker image tag scr:v1.0 dockercontaineregistry.azurecr.io/scr:1.0
+```
+
+7. And push the image to ACR
 
 ![Preview](/imgs/acr_logs.png)
 
