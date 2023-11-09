@@ -7,6 +7,7 @@
 ![Preview](/imgs/docker_registry.png)
 
 * There are two types of registries
+
 1. Public Registry: Open to all for usage 
    * Example: Docker Hub
 
