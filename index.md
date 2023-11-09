@@ -35,7 +35,7 @@
 docker image build -t scr:v1.0 .
 ```
 
-3. Generally registries will have repositories, and each repository represents an application. 
+3. Generally, registries will have repositories, and each repository represents an application. 
 
 4. The naming conventions slightly differ from registry to registry (cloud to cloud as well).
 
@@ -64,7 +64,7 @@ docker image push aegonn/scr:1.0
 
 11. But, if we want to restrict these images to be used only in our organization or only by particular users in the team; It can be achieved while pushing these images to our private registry
 
->## II. Pushing docker images to Private Registries 
+>## II. Pushing docker images to Private Registries (ACR/ECR)
 
 ## Azure Container Registry (ACR)
 
