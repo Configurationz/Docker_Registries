@@ -35,9 +35,9 @@
 docker image build -t scr:v1.0 .
 ```
 
-3. Generally, registries will have repositories, and each repository represents an application. 
+3. Generally, registries will have repositories, and each repository represents an application
 
-4. The naming conventions slightly differ from registry to registry (cloud to cloud as well).
+4. The naming conventions slightly differ from registry to registry (cloud to cloud as well)
 
 5. Docker Hub: Naming convention is ```<account-name>/<image-name>:<tag>```
 
