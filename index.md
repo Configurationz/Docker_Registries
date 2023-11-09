@@ -52,7 +52,6 @@ docker image tag scr:v1.0 aegonn/scr:1.0
 ![Preview](/imgs/docker_push.png)
 
 8. After successful login, let's push the image to DockerHub
-
 ```
 docker image push aegonn/scr:1.0
 ```
@@ -66,7 +65,7 @@ docker image push aegonn/scr:1.0
 
 10. Since, the Docker Hub registry is a public registry, we were able to pull the image from dockerhub directly
 
-11. But, if we want to restrict these images to be used only in our organization or only by particular users in the team; It can be achieved while pushing these images to our private registry 
+11. But, if we want to restrict these images to be used only in our organization or only by particular users in the team; It can be achieved while pushing these images to our private registry
 
 >## II. Pushing docker images to Private Registries 
 
