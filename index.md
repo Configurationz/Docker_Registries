@@ -48,7 +48,6 @@ docker image tag scr:v1.0 aegonn/scr:1.0
 ![Preview](/imgs/tags.png)
 
 7. Next, we need to login into Docker Hub using ```docker login```
-
 ![Preview](/imgs/docker_push.png)
 
 8. After successful login, let's push the image to DockerHub
@@ -60,7 +59,6 @@ docker image push aegonn/scr:1.0
 ![Preview](/imgs/docker_lgn.png)
 
 9. Let's use this image in docker playground
-
 ![Preview](/imgs/docker_playground.png)
 
 10. Since, the Docker Hub registry is a public registry, we were able to pull the image from dockerhub directly
@@ -95,9 +93,12 @@ az acr login --name dockercontaineregistry
 ```
 docker image tag scr:v1.0 dockercontaineregistry.azurecr.io/scr:1.0
 ```
+
 7. And push the image to ACR
 
-![Preview](/imgs/containerregistry.png)
+![Preview](/imgs/acr_logs.png)
+
+![Preview](/imgs/acr_portal.png)
 
 
 
