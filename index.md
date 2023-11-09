@@ -53,6 +53,7 @@ docker image tag scr:v1.0 aegonn/scr:1.0
 ![Preview](/imgs/docker_push.png)
 
 8. After successful login, let's push the image to DockerHub
+
 ```
 docker image push aegonn/scr:1.0
 ```
@@ -70,7 +71,7 @@ docker image push aegonn/scr:1.0
 
 >## II. Pushing docker images to Private Registries 
 
-### Azure Container Registry (ACR)
+## Azure Container Registry (ACR)
 
 1. Logout of any other registry if logged in using ```docker logout```
 
@@ -88,12 +89,12 @@ curl -sL https://aka.ms/InstallAzureCLIDeb | sudo bash
 
 ![Preview](/imgs/containerregistry.png)
 
-5. Login into Azure registry and 
+5. Login into Azure Registry
 ```
 az acr login --name dockercontaineregistry
 ```
 
-6. Next, tag the already built image scr:v1.0 to dockercontaineregistry.azurecr.io/scr:1.0
+6. Next, tag the already built image scr:v1.0 to dockercontaineregistry.azurecr.io/scr:1.0 as this is how azure recognizes the naming convention of images to be stored into ACR
 ```
 docker image tag scr:v1.0 dockercontaineregistry.azurecr.io/scr:1.0
 ```
@@ -105,7 +106,7 @@ docker image tag scr:v1.0 dockercontaineregistry.azurecr.io/scr:1.0
 ![Preview](/imgs/acr_portal.png)
 
 
-### Elastic Container Registry (ECR)
+## Elastic Container Registry (ECR)
 
 ## Reference
 
