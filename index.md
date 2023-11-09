@@ -1,5 +1,5 @@
-## Docker Registries
---------------------
+## DockerHub Registry
+---------------------
 
 * A Registry is used to store the docker images.
 * Docker images are OCI (Open Container initiative) compliant
@@ -7,9 +7,10 @@
 ![Preview](/imgs/docker_registry.png)
 
 * There are two types of registries
-1. Public registry: Open to all for usage 
+1. Public Registry: Open to all for usage 
    * Example: Docker Hub
-2. Private registry: Registry for internal usage with in the organization
+
+2. Private Registry: Registry for internal usage with in the organization
    * Examples: 
      * Docker Hub (private)
      * Azure Container Registry (ACR)
@@ -88,9 +89,7 @@ curl -sL https://aka.ms/InstallAzureCLIDeb | sudo bash
 ```
 az acr login --name <registry-name>
 ```
-```
 
-```
 
 
 ## Reference
