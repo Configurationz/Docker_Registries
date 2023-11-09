@@ -19,7 +19,6 @@
      * JFROG/Artifcatory
 * [Refer Here](https://hub.docker.com/_/registry) for docker registry image
 
-
 >## I. Let's build a Student Course registry for Docker Hub
 
 ### Pre-requisites:
@@ -86,7 +85,6 @@ curl -sL https://aka.ms/InstallAzureCLIDeb | sudo bash
 3. Next, execute ```az login``` and authenticate the credentials using code
 
 4. Create the registry from the portal as mentioned here _[Create a container registry](https://learn.microsoft.com/en-us/azure/container-registry/container-registry-get-started-portal?tabs=azure-cli#create-a-container-registry)_
-
 ![Preview](/imgs/containerregistry.png)
 
 5. Login into Azure Registry
@@ -99,7 +97,8 @@ az acr login --name dockercontaineregistry
 docker image tag scr:v1.0 dockercontaineregistry.azurecr.io/scr:1.0
 ```
 
-7. And push the image to ACR
+7. Now, you can push your image to ACR
+ And push the image to ACR
 
 ![Preview](/imgs/acr_logs.png)
 
