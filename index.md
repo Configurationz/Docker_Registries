@@ -85,13 +85,6 @@ curl -sL https://aka.ms/InstallAzureCLIDeb | sudo bash
 3. Next, execute ```az login``` and authenticate the credentials using code
 
 4. Create the registry from the portal as mentioned here _[Create a container registry](https://learn.microsoft.com/en-us/azure/container-registry/container-registry-get-started-portal?tabs=azure-cli#create-a-container-registry)_
-5. Login into Azure Registry
-```
-az acr login --name dockercontaineregistry
-```
-6. Next, tag the already built image scr:v1.0 to dockercontaineregistry.azurecr.io/scr:1.0 as this is how azure recognizes the naming convention of images to be stored into ACR
-7. Now, you can push your image to ACR
- And push the image to ACR
 
 ![Preview](/imgs/containerregistry.png)
 
@@ -105,8 +98,7 @@ az acr login --name dockercontaineregistry
 docker image tag scr:v1.0 dockercontaineregistry.azurecr.io/scr:1.0
 ```
 
-7. Now, you can push your image to ACR
- And push the image to ACR
+7. And push the image to ACR
 
 ![Preview](/imgs/acr_logs.png)
 
