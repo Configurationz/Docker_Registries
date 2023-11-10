@@ -148,7 +148,7 @@ sudo ./aws/install
 aws configure
 ```
 
-11. After configuring CLI, enter the push commands from 'View push commands'
+11. After configuring CLI, enter the push commands from 'View push commands' (Amazon ECR > Repositories > dockerrepository > View push commands)
 ```
 aws ecr get-login-password --region ap-south-2 | docker login --username AWS --password-stdin 890865287737.dkr.ecr.ap-south-2.amazonaws.com
 ```
