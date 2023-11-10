@@ -174,5 +174,5 @@ _**Note: After completion, ensure to deactivate/delete Access keys from the IAM 
 
 [^1]: _**[Quickstart: Create an Azure container registry using the Azure portal](https://learn.microsoft.com/en-us/azure/container-registry/container-registry-get-started-portal?tabs=azure-cli){:target="_blank"}**_
 
-[^2] _**[Getting started with Amazon ECR using the AWS Management Console](https://docs.aws.amazon.com/AmazonECR/latest/userguide/getting-started-console.html){:target="_blank"}**_
+[^2]: _**[Getting started with Amazon ECR using the AWS Management Console](https://docs.aws.amazon.com/AmazonECR/latest/userguide/getting-started-console.html){:target="_blank"}**_
 
