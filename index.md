@@ -66,7 +66,7 @@ docker image push aegonn/scr:1.0
 
 >## II. Pushing docker images to Private Registries (ACR/ECR)
 
-## Azure Container Registry (ACR)
+## Azure Container Registry (ACR) [^1]
 
 1. Logout of any other registry if logged in using ```docker logout```
 
@@ -78,7 +78,7 @@ sudo apt install
 curl -sL https://aka.ms/InstallAzureCLIDeb | sudo bash
 ```
 
-3. Next, execute ```az login``` and authenticate the credentials using code [^1]
+3. Next, execute ```az login``` and authenticate the credentials using code
 
 4. Create the registry from the portal as mentioned here _[Create a container registry](https://learn.microsoft.com/en-us/azure/container-registry/container-registry-get-started-portal?tabs=azure-cli#create-a-container-registry)_
 ![Preview](/imgs/containerregistry.png)
@@ -100,7 +100,7 @@ docker image tag scr:v1.0 dockercontaineregistry.azurecr.io/scr:1.0
 ![Preview](/imgs/acr_portal.png)
 
 
-## Elastic Container Registry (ECR)
+## Elastic Container Registry (ECR) [^2]
 
 1. Refer Here for the _[documentation](https://docs.aws.amazon.com/AmazonECR/latest/userguide/getting-started-console.html)_
 
@@ -174,5 +174,5 @@ _**Note: After completion, ensure to deactivate/delete Access keys from the IAM 
 
 [^1]: _**[Quickstart: Create an Azure container registry using the Azure portal](https://learn.microsoft.com/en-us/azure/container-registry/container-registry-get-started-portal?tabs=azure-cli){:target="_blank"}**_
 
-> _**[Getting started with Amazon ECR using the AWS Management Console](https://docs.aws.amazon.com/AmazonECR/latest/userguide/getting-started-console.html){:target="_blank"}**_
+[^2] _**[Getting started with Amazon ECR using the AWS Management Console](https://docs.aws.amazon.com/AmazonECR/latest/userguide/getting-started-console.html){:target="_blank"}**_
 
