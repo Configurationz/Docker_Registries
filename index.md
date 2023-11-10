@@ -99,8 +99,80 @@ docker image tag scr:v1.0 dockercontaineregistry.azurecr.io/scr:1.0
 
 ![Preview](/imgs/acr_portal.png)
 
+
 ## Elastic Container Registry (ECR)
 
-## Reference
+1. Refer Here for the _[documentation](https://docs.aws.amazon.com/AmazonECR/latest/userguide/getting-started-console.html)_
+
+2. Maually create a repository from the AWS console (portal)
+![Preview](/imgs/ecr_console1.png)
+![Preview](/imgs/ecr_console2.png)
+
+3. Here (AWS), we can directly create a repository, but in Azure, we created a registry. Registry is a collection of repositories. Each repository represents an application
+![Preview](/imgs/ecr_repositry.png)
+
+4. Once we create a repository, then we can view push commands
+![Preview](/imgs/push_commands.png)
+
+5. Install Unzip
+```
+sudo apt update
+sudo apt install unzip -y
+```
+
+6. Then execute the following commands as provided in _[AWS CLI](https://docs.aws.amazon.com/cli/latest/userguide/getting-started-install.html#getting-started-install-instructions)_
+```
+curl "https://awscli.amazonaws.com/awscli-exe-linux-x86_64.zip" -o "awscliv2.zip"
+```
+```
+unzip awscliv2.zip
+```
+```
+sudo ./aws/install
+```
+
+7. In AWS, we need to create an IAM user to whom we need to attach necessary policies. In this case, we'll be providing 'AdministratorAccess' policy to a user called as 'docker'
+
+8. Create an _[IAM user](https://sst.dev/chapters/create-an-iam-user.html)_
+![Preview](/imgs/IAM_1.png)
+![Preview](/imgs/IAM_2.png)
+![Preview](/imgs/IAM_3.png)
+![Preview](/imgs/IAM_4.png)
+
+9. After successful creation of IAM role, navigate to 'Security credentials' so as to create & download 'Access keys'
+![Preview](/imgs/IAM_5.png)
+![Preview](/imgs/IAM_6.png)
+![Preview](/imgs/IAM_7.png)
+
+10. Now configure AWS Cli with credentials (Access keys) and enter the Default regions according to your requirement (ap-south-2)
+```
+aws configure
+```
+
+11. After configuring CLI, enter the push commands from 'View push commands'
+```
+aws ecr get-login-password --region ap-south-2 | docker login --username AWS --password-stdin 890865287737.dkr.ecr.ap-south-2.amazonaws.com
+```
+
+12. Rename the tag 
+```
+docker tag scr:v1.0 890865287737.dkr.ecr.ap-south-2.amazonaws.com/dockerrepository:1.0
+```
+
+13. Push to ECR Repository
+```
+docker push 890865287737.dkr.ecr.ap-south-2.amazonaws.com/dockerrepository:1.0
+```
+
+![Preview](/imgs/ecr_push.png)
+
+![Preview](/imgs/ecr_artifact.png)
+
+_**Note: After completion, ensure to disable 'docker' user from the console in order to avoid any misuse of your AWS account**_
+
+
+## References
 
 > _**[Quickstart: Create an Azure container registry using the Azure portal](https://learn.microsoft.com/en-us/azure/container-registry/container-registry-get-started-portal?tabs=azure-cli)**_
+
+> _**[Getting started with Amazon ECR using the AWS Management Console](https://docs.aws.amazon.com/AmazonECR/latest/userguide/getting-started-console.html)**_
