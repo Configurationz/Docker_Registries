@@ -177,4 +177,3 @@ _**Note: After completion, ensure to deactivate/delete Access keys from the IAM 
 [^2]: _**[Getting started with Amazon ECR using the AWS Management Console](https://docs.aws.amazon.com/AmazonECR/latest/userguide/getting-started-console.html){:target="_blank"}**_
 
 :whale2:
-:whale2:
