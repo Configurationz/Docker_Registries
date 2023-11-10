@@ -112,7 +112,6 @@ docker image tag scr:v1.0 dockercontaineregistry.azurecr.io/scr:1.0
 ![Preview](/imgs/ecr_repositry.png)
 
 4. Once we create a repository, then we can view push commands
-![Preview](/imgs/push_commands.png)
 
 5. Install Unzip
 ```
@@ -153,20 +152,20 @@ aws configure
 ```
 aws ecr get-login-password --region ap-south-2 | docker login --username AWS --password-stdin 890865287737.dkr.ecr.ap-south-2.amazonaws.com
 ```
+![Preview](/imgs/push_commands.png)
 
 12. Rename the tag 
 ```
 docker tag scr:v1.0 890865287737.dkr.ecr.ap-south-2.amazonaws.com/dockerrepository:1.0
 ```
+![Preview](/imgs/ecr_push.png)
 
 13. Push to ECR Repository
 ```
 docker push 890865287737.dkr.ecr.ap-south-2.amazonaws.com/dockerrepository:1.0
 ```
-
-![Preview](/imgs/ecr_push.png)
-
 ![Preview](/imgs/ecr_artifact.png)
+
 
 _**Note: After completion, ensure to disable/delete IAM user from the console in order to avoid any misuse of your AWS account**_
 
