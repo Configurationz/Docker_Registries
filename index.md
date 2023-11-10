@@ -152,7 +152,7 @@ aws configure
 ```
 aws ecr get-login-password --region ap-south-2 | docker login --username AWS --password-stdin 890865287737.dkr.ecr.ap-south-2.amazonaws.com
 ```
-![Preview](/imgs/push_commands.png)
+![Preview](/imgs/push_command.png)
 
 12. Rename the tag 
 ```
