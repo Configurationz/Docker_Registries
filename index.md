@@ -167,7 +167,7 @@ docker push 890865287737.dkr.ecr.ap-south-2.amazonaws.com/dockerrepository:1.0
 ![Preview](/imgs/ecr_artifact.png)
 
 
-_**Note: After completion, ensure to diactivate/delete Access keys from the IAM console in order to avoid any misuse of your AWS account**_
+_**Note: After completion, ensure to deactivate/delete Access keys from the IAM console in order to avoid any misuse of your AWS account**_
 
 
 ## References
