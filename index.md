@@ -78,7 +78,7 @@ sudo apt install
 curl -sL https://aka.ms/InstallAzureCLIDeb | sudo bash
 ```
 
-3. Next, execute ```az login``` and authenticate the credentials using code
+3. Next, execute ```az login``` and authenticate the credentials using code [^1]
 
 4. Create the registry from the portal as mentioned here _[Create a container registry](https://learn.microsoft.com/en-us/azure/container-registry/container-registry-get-started-portal?tabs=azure-cli#create-a-container-registry)_
 ![Preview](/imgs/containerregistry.png)
@@ -172,7 +172,7 @@ _**Note: After completion, ensure to deactivate/delete Access keys from the IAM 
 
 ## References
 
-> _**[Quickstart: Create an Azure container registry using the Azure portal](https://learn.microsoft.com/en-us/azure/container-registry/container-registry-get-started-portal?tabs=azure-cli){:target="_blank"}**_
+[^1]: _**[Quickstart: Create an Azure container registry using the Azure portal](https://learn.microsoft.com/en-us/azure/container-registry/container-registry-get-started-portal?tabs=azure-cli){:target="_blank"}**_
 
 > _**[Getting started with Amazon ECR using the AWS Management Console](https://docs.aws.amazon.com/AmazonECR/latest/userguide/getting-started-console.html){:target="_blank"}**_
 
