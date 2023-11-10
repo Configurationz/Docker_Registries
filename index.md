@@ -17,20 +17,20 @@
      * Azure Container Registry (ACR)
      * AWS Container Registry (ECR)
      * JFROG/Artifcatory
-* [Refer Here](https://hub.docker.com/_/registry) for docker registry image
+  * [Refer Here](https://hub.docker.com/_/registry) for docker registry image
 
 >## I. Let's build a Student Course registry for Docker Hub
 
 ### Pre-requisites:
-1. We'll need to install docker on any Linux distribution (Ubuntu/CentOS)
+1. Install docker on any Linux distribution (Ubuntu/CentOS)
 2. Find the docker installation [steps here](https://get.docker.com/) 
-3. _[StudentCoursesRestAPI](https://github.com/Prozects/StudentCoursesRestAPI.git)_ GitHub Repo
+3. _[StudentCoursesRestAPI](https://github.com/Prozects/StudentCoursesRestAPI.git)_ GitHub
 
 ### Configuration:
 
 1. Clone the repository into your local m/c and enter the repository directory
 
-2. Build the student course Rest API image with the following command
+2. Build the 'StudentCoursesRestAPI' image with the following command
 ```
 docker image build -t scr:v1.0 .
 ```
@@ -41,7 +41,7 @@ docker image build -t scr:v1.0 .
 
 5. Docker Hub: Naming convention is ```<account-name>/<image-name>:<tag>```
 
-6. Now let's tag the already built image scr:1.0 to aegonn/scr:1.0
+6. Now let's tag the already built image scr:v1.0
 ```
 docker image tag scr:v1.0 aegonn/scr:1.0
 ```
@@ -168,7 +168,7 @@ docker push 890865287737.dkr.ecr.ap-south-2.amazonaws.com/dockerrepository:1.0
 
 ![Preview](/imgs/ecr_artifact.png)
 
-_**Note: After completion, ensure to disable 'docker' user from the console in order to avoid any misuse of your AWS account**_
+_**Note: After completion, ensure to disable/delete IAM user from the console in order to avoid any misuse of your AWS account**_
 
 
 ## References
