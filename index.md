@@ -1,5 +1,5 @@
-## DockerHub Registry
----------------------
+## 🐳 DockerHub Registry 🐋
+----------------------------
 
 * A Registry is used to store the docker images.
 * Docker images are OCI (Open Container initiative) compliant
@@ -169,19 +169,17 @@ docker push 890865287737.dkr.ecr.ap-south-2.amazonaws.com/dockerrepository:1.0
 
 _**Note: After completion, ensure to deactivate/delete Access keys from the IAM console in order to avoid any misuse of your AWS account**_
 
-
-## References
-
-[^1]: _**[Quickstart: Create an Azure container registry using the Azure portal](https://learn.microsoft.com/en-us/azure/container-registry/container-registry-get-started-portal?tabs=azure-cli){:target="_blank"}**_
-
-[^2]: _**[Getting started with Amazon ECR using the AWS Management Console](https://docs.aws.amazon.com/AmazonECR/latest/userguide/getting-started-console.html){:target="_blank"}**_
-
-🐳🐋
-
 <p style="text-align: left"><img src="./imgs/partydocker.gif"></p>
 
 <p style="text-align: center"><img src="./imgs/dockerswim.gif"></p> 
 
 <p style="text-align: right"> <img src="./imgs/partydocker.gif">
 </p>
+
+
+## References
+
+[^1]: _**[Quickstart: Create an Azure container registry using the Azure portal](https://learn.microsoft.com/en-us/azure/container-registry/container-registry-get-started-portal?tabs=azure-cli){:target="_blank"}**_
+
+[^2]: _**[Getting started with Amazon ECR using the AWS Management Console](https://docs.aws.amazon.com/AmazonECR/latest/userguide/getting-started-console.html){:target="_blank"}**_
 
