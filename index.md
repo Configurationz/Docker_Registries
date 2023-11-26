@@ -169,11 +169,10 @@ docker push 890865287737.dkr.ecr.ap-south-2.amazonaws.com/dockerrepository:1.0
 
 _**Note: After completion, ensure to deactivate/delete Access keys from the IAM console in order to avoid any misuse of your AWS account**_
 
-<p style="text-align: left"><img src="./imgs/partydocker.gif"></p>
-
-<p style="text-align: center"><img src="./imgs/dockerswim.gif"></p> 
-
-<p style="text-align: right"> <img src="./imgs/partydocker.gif">
+<p align="center">
+      <img src="./imgs/partydocker.gif" align="left">
+      <img src="./imgs/dockerswim.gif">
+      <img src="./imgs/partydocker.gif" align="right">
 </p>
 
 
