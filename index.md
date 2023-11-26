@@ -169,12 +169,6 @@ docker push 890865287737.dkr.ecr.ap-south-2.amazonaws.com/dockerrepository:1.0
 
 _**Note: After completion, ensure to deactivate/delete Access keys from the IAM console in order to avoid any misuse of your AWS account**_
 
-<p align="center">
-      <img src="./imgs/partydocker.gif" align="left">
-      <img src="./imgs/dockerswim.gif">
-      <img src="./imgs/partydocker.gif" align="right">
-</p>
-
 
 ## References
 
@@ -182,3 +176,8 @@ _**Note: After completion, ensure to deactivate/delete Access keys from the IAM 
 
 [^2]: _**[Getting started with Amazon ECR using the AWS Management Console](https://docs.aws.amazon.com/AmazonECR/latest/userguide/getting-started-console.html){:target="_blank"}**_
 
+<p align="center">
+      <img src="./imgs/partydocker.gif" align="left">
+      <img src="./imgs/dockerswim.gif">
+      <img src="./imgs/partydocker.gif" align="right">
+</p>
